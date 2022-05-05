@@ -9,9 +9,9 @@ export default function Algorithm() {
     [5, 6],
   ];
 
-  for (let i = 0; i < array1.length; i++) {
-    console.log(array1[i].map((data) => data));
-  }
+  array1.map((data, index) =>
+    data.map((data2, index2) => array2[index][index2] + data2)
+  );
 
   // 2번 항목에 대해서는 통과 함
   //   const newArray1 = array1.map((data) => data[array1.length - 1]);
