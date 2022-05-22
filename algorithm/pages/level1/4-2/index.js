@@ -1,10 +1,8 @@
-import { ampFirstEntryNamesMap } from "next/dist/build/webpack/plugins/next-drop-client-page-plugin";
-
 export default function Algorithm() {
+  //콜라츠 추측
   let num = 6;
   let answer = 0;
-
-  for (let i = 0; i <= 500; i++) {
+  for (let i = 0; i <= 501; i++) {
     if (num === 1) {
       answer = i;
       console.log(answer);
