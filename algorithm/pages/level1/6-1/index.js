@@ -1,4 +1,5 @@
 export default function Algorithm() {
+  //자릿수 더하기
   let n = 2;
   let answer = "";
   const array = [...String(n)];
