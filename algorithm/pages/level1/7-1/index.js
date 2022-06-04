@@ -11,5 +11,5 @@ export default function Algorithm() {
     }
   }
 
-  return answer.reduce((a, b) => a + b);
+  return answer.reduce((a, b) => a + b, 0);
 }
