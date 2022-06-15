@@ -5,8 +5,22 @@ export default function Algorithm() {
 
   const ss = "a234";
 
-  console.log(parseFloat(s));
+  console.log(
+    ss
+      .split("")
+      .map((data) => Number(data))
+      .filter((data) => !isNaN(data))
+  );
 
-  if (Number.isInteger()) {
+  if (
+    s.split("").length !==
+    s
+      .split("")
+      .map((data) => Number(data))
+      .filter((data) => !isNaN(data)).length
+  ) {
+    return false;
+  } else {
+    return true;
   }
 }
