@@ -4,5 +4,5 @@ export default function Algorithm() {
   const seoul = ["Jane", "Kim"];
 
   console.log(seoul.indexOf("Kim"));
-  return `김서방은 ${seoul.indexOf("Kim")}에 있다. `;
+  return `김서방은 ${seoul.indexOf("Kim")}에 있다`;
 }
