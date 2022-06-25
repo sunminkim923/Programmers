@@ -1,26 +1,19 @@
 export default function Algorithm() {
   //문자열 다루기 기본
 
-  const s = "1234";
+  const s = "s234";
+  console.log(isNaN());
 
-  const ss = "a234";
+  // if ([...s].includes("e")) {
+  //   return false;
+  // }
+  console.log([...s].includes("s"));
 
-  console.log(
-    ss
-      .split("")
-      .map((data) => Number(data))
-      .filter((data) => !isNaN(data))
-  );
-
-  if (
-    s.split("").length !==
-    s
-      .split("")
-      .map((data) => Number(data))
-      .filter((data) => !isNaN(data)).length
-  ) {
+  if (s.length !== 4 && s.length !== 6) {
+    return false;
+  } else if ([...s].includes("e")) {
     return false;
   } else {
-    return true;
+    return !isNaN(s);
   }
 }

@@ -1,18 +1,34 @@
 export default function Algorithm() {
   //소수찾기
 
-  const n = 2;
+  const n = 50;
 
-  const numArray = [];
+  let array = [];
 
-  const answer = [];
-  for (let i = 1; i <= n; i++) {
-    numArray.push(i);
+  for (let i = 2; i <= n; i++) {
+    array.push(i);
   }
 
-  console.log(
-    numArray.filter(
-      (data) => data % 2 !== 0 && Number.isInteger(Math.sqrt(data)) === false
-    )
-  );
+  let answer = [];
+  // console.log(array);
+  array.map((data) => {
+    if (data === 2 || data === 3 || data === 5 || data === 7) {
+      answer.push(data);
+    } else {
+      if (
+        data % 2 !== 0 &&
+        data % 3 !== 0 &&
+        data % 5 !== 0 &&
+        data % 7 !== 0
+      ) {
+        answer.push(data);
+      }
+    }
+  });
+
+  // array.filter((data) => data ===2 || data === 3 || data === 5 || data === 7 && )
+
+  console.log(answer);
+
+  console.log(answer.length);
 }
