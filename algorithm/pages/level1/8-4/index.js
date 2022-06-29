@@ -1,7 +1,7 @@
 export default function Algorithm() {
   //소수찾기
 
-  const n = 50;
+  const n = 1000;
 
   let array = [];
 
